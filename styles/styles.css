@@ -266,12 +266,15 @@ img {
 /* Герой */
 
 .hero {
+
     padding-top: 200px;
     padding-bottom: 200px;
 
     text-align: center;
 
     background-color: var(--secondary-background-color);
+    background-image: url(../images/bgcimage.jpg);
+
 }
 
 .hero-title {

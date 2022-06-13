@@ -274,6 +274,10 @@ img {
 
     background-color: var(--secondary-background-color);
     background-image: url(../images/bgcimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
 
 }
 

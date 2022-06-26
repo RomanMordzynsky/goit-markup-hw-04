@@ -251,39 +251,22 @@ img {
 
 } */
 
-.envelope-icon {
+.icon-envelope {
     margin-right: 10px;
 }
 
-.envelope-icon:hover {
+.icon-envelope:hover {
     fill: var(--accent-color);
 }
 
-
-.link .mail {
-    display: block;
-}
-
-.envelope {
-    
+.icon-smartphone {
     margin-right: 10px;
 }
 
-.envelope:hover {
-    
-    /* fill: var(-accent-color); */
-      
+.icon-smartphone:hover {
+    fill: var(--accent-color);
 }
 
-.phone::before {
-    display: inline-flex;
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/smartphone\ \(1\).svg);
-    background-size: contain;
-}
 
 /* Секції */
 
@@ -450,6 +433,20 @@ img {
     font-size: 14px;
     line-height: 1.7;
 }
+
+.features-container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--additional-background-color);
+}
+
+
 
 /* Команда */
 

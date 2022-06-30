@@ -278,6 +278,10 @@ img {
     padding-bottom: 94px;
 }
 
+.section-team {
+    margin-bottom: 94px;
+}
+
 .section-work {
     padding-top: 0;
 }
@@ -444,7 +448,7 @@ img {
     justify-content: center;
     align-items: center;
     
-    background-color: var(--additional-background-color);
+    /* background-color: var(--additional-background-color); */
 }
 
 
@@ -544,6 +548,44 @@ img {
 .social-svg:focus {
     fill: var(--primary-background-color);
 }
+
+/* Постоянные клиенты */
+
+.clients-list {
+    display: flex;
+    margin-bottom: 94px;
+}
+
+.clients-list .item+.item {
+    margin-left: 30px;
+} 
+
+.clients-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 32px 16px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+}
+
+.clients-svg {
+    fill: var(--primary-sociallink-color);
+}
+
+.clients-svg:hover {
+    fill: var(--accent-color);
+}
+
+
+
 
 /* Роботи */
 

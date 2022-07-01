@@ -17,6 +17,7 @@
     --primary-sociallink-color: #AFB1B8;
     --primary-font-weight: 700;
     --secondary-font-weight: 500;
+    --footer-links-bgccolor: rgba(255, 255, 255, 0.1);
 }
 
 .reset {
@@ -447,8 +448,6 @@ img {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    
-    /* background-color: var(--additional-background-color); */
 }
 
 
@@ -662,4 +661,58 @@ img {
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-color);
+}
+
+
+
+.footer-block {
+    display: block;
+    margin-right: 878px;
+    margin-left: 516px;
+    margin-bottom: 100px;
+
+}
+
+
+
+.footer-socials {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-socials .footitem+.footitem {
+    margin-left: 10px;
+}
+
+.footlink {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--footer-links-bgccolor);
+}
+
+.footlink:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-svg {
+    fill: var(--primary-background-color);
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    
+    font-weight: var(--primary-font-weight);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: var(--primary-background-color);
 }

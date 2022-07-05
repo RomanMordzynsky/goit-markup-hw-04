@@ -237,27 +237,25 @@ img {
     color: var(--primary-text-color);
 }
 
+.head-div {
+    display: flex;
+
+}
+
 .site-contacts .link:hover,
 .site-contacts .link:focus {
     color: var(--accent-color);
 }
 
-/* .mail::before {
-    display: inline-flex;
-    content: " ";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/envelope\ \(1\).svg);
-    background-size: contain;
-
-} */
+.site-contacts .link:hover .icon-envelope {
+    fill: var(--accent-color);
+}
 
 .icon-envelope {
     margin-right: 10px;
 }
 
-.icon-envelope:hover {
+.site-contacts .link:hover .icon-smartphone {
     fill: var(--accent-color);
 }
 
@@ -265,15 +263,15 @@ img {
     margin-right: 10px;
 }
 
-.icon-smartphone:hover {
-    fill: var(--accent-color);
+.smart {
+    min-width: 142px;
 }
-
 
 /* Секції */
 
 .section,
-.section-team {
+.section-team,
+.section-work {
 
     padding-top: 94px;
     padding-bottom: 94px;
@@ -300,29 +298,32 @@ img {
 
 /* Герой */
 
-/* .hero {
+    .hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
-    margin-right: auto; 
-    background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4)),
+    margin-right: auto;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/bgcimage.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
 
-    text-align: center; 
+    text-align: center;
 
     background-color: var(--secondary-background-color);
-} */
+}
 
-.hero {
+    .hero {
+    background-color: var(--secondary-background-color);
+}
+
+
+.hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -354,6 +355,15 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.filters-list>.item:hover,
+.filters-list>.item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .filters-list .item+.item {
@@ -504,14 +514,18 @@ img {
     text-align: center;
 }
 
+.img-description {
+    display: block;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}
+
 .team-socials {
     display: flex;
     width: 206px;
     height: 44px;
-    margin-left: 32px;
     margin-top: 16px;
-    margin-right: 32px;
-    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
 
@@ -543,10 +557,14 @@ img {
     fill: var(--primary-sociallink-color);
 }
 
-.social-svg:hover,
-.social-svg:focus {
+.social-link:hover .social-svg {
     fill: var(--primary-background-color);
 }
+
+/* .social-svg:hover,
+.social-svg:focus {
+    fill: var(--primary-background-color);
+}  */
 
 /* Постоянные клиенты */
 
@@ -579,11 +597,10 @@ img {
     fill: var(--primary-sociallink-color);
 }
 
-.clients-svg:hover {
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
     fill: var(--accent-color);
 }
-
-
 
 
 /* Роботи */
@@ -595,6 +612,17 @@ img {
     letter-spacing: .06em;
 
     color: var(--secondary-text-color);
+}
+
+.works-list {
+    display: flex;
+}
+
+.works-list>.item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .work-list {
@@ -667,18 +695,19 @@ img {
 
 .footer-block {
     display: block;
+    width: 206px;
+    height: 80px;
+    margin-top: 10px;
     margin-right: 878px;
     margin-left: 516px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 
 }
 
-
-
 .footer-socials {
     display: flex;
-    width: 206px;
-    height: 44px;
+    /* width: 206px;
+    height: 44px; */
     align-items: center;
     justify-content: center;
 

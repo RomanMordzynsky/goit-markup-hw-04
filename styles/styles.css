@@ -650,6 +650,11 @@ img {
     background-color: var(--secondary-background-color);
 }
 
+.main-footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer {
     font-style: normal;
 
@@ -670,10 +675,10 @@ img {
 
 
 .address-container {
-    display: block;
-    width: 231px;
-    height: 81px;
-   
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .address {
@@ -713,7 +718,6 @@ img {
 .footer-socials {
     display: flex;
     align-items: center;
-    justify-content: center;
 
 }
 
@@ -757,10 +761,5 @@ img {
 }
 
 .footer-block {
-    display: flex;
-    flex-wrap: wrap;
-    width: 206px;
-    height: 80px;
-    margin-left: 300px;
-    margin-bottom: 100px;
+    margin-left: 70px;
 }

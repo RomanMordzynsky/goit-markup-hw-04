@@ -497,9 +497,6 @@ img {
     color: var(--secondary-text-color);
 }
 
-/* .team-list .text {
-    margin-bottom: 16px;
-} */
 
 .team-list .text {
     font-size: 16px;
@@ -555,7 +552,6 @@ img {
 .social-link:hover .social-svg {
     fill: var(--primary-background-color);
 }
-
 
 
 /* Постоянные клиенты */

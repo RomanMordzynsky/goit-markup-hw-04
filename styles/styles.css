@@ -677,8 +677,6 @@ img {
 .address-container {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .address {
